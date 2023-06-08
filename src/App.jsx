@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import { Navbar, Hero, Services, Works, About, Contact, Footer, StarsCanvas } from './components';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
     </div>
 
     <StarsCanvas />
+    <Toaster />
   </div>
 );
 

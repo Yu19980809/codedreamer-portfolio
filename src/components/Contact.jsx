@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { contactInfo } from "../constants";
+import toast from 'react-hot-toast';
 
 const InfoItem = ( { icon, name, value } ) => (
   <div className="flex flex-col items-center">
@@ -25,7 +26,7 @@ const Contact = () => {
     
     try {
       setSubmitting( true );
-      if ( !form.name || !form.email || !form.message ) return alert( 'Please complete all the form fileds' );
+      if ( !form.name || !form.email || !form.message ) return toast( 'Please complete all the form fileds' );
 
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -41,9 +42,9 @@ const Contact = () => {
       );
 
       setForm( { name: '', email: '', message: '' } );
-      alert( 'The email was sent successfully. Thank you for your message' );
+      toast.success( 'Sending email succeeded' );
     } catch (error) {
-      alert( 'Ahh, something went wrong. Please try again' )
+      toast.error( 'Ahh, something went wrong. Please try again' );
     } finally {
       setSubmitting( false );
     }
