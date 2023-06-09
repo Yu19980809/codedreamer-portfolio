@@ -14,7 +14,7 @@ const socialMedia = [
 
 const services = [
   {
-    image: "/src/assets/react.svg",
+    image: "/vite.svg",
     title: "Digital Consulting",
     content: " Find a 100% matched  digital solution for your needs."
   },
