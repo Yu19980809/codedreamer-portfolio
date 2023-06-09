@@ -19,17 +19,17 @@ const services = [
     content: " Find a 100% matched  digital solution for your needs."
   },
   {
-    image: "/src/assets/react.svg",
+    image: "/react.svg",
     title: "Product design",
     content: "UI design"
   },
   {
-    image: "/src/assets/react.svg",
+    image: "/vite.svg",
     title: "Custom developement",
     content: "mobile friendly"
   },
   {
-    image: "/src/assets/react.svg",
+    image: "/react.svg",
     title: "Wechat Mini-Program",
     content: "The express way to bring your business into China market"
   }
