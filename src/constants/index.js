@@ -11,7 +11,33 @@ const socialMedia = [
   { id: 'social-media-2', name: 'email', icon: email, link: 'javascript:;' }
 ];
 
+
+const services = [
+  {
+    image: "/src/assets/react.svg",
+    title: "Digital Consulting",
+    content: " Find a 100% matched  digital solution for your needs."
+  },
+  {
+    image: "/src/assets/react.svg",
+    title: "Product design",
+    content: "UI design"
+  },
+  {
+    image: "/src/assets/react.svg",
+    title: "Custom developement",
+    content: "mobile friendly"
+  },
+  {
+    image: "/src/assets/react.svg",
+    title: "Wechat Mini-Program",
+    content: "The express way to bring your business into China market"
+  }
+
+];
+
 export {
   contactInfo,
-  socialMedia
+  socialMedia,
+  services
 };
