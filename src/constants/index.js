@@ -1,5 +1,4 @@
 import { address, phone, mail, chat, email } from '../assets';
-
 const contactInfo = [
   { icon: address, name: 'Address', value: "Jing'an Shanghai" },
   { icon: phone, name: 'Phone', value: '+86 15172765447' },
@@ -11,50 +10,50 @@ const socialMedia = [
   { id: 'social-media-2', name: 'email', icon: email, link: 'javascript:;' }
 ];
 
+const works = {
+  works: [
+    {
+      //image
+      name: 'Hobos',
+      image:'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/Hobos-QR.gif',
+      description: 'Hobos',
+      tags: [
+        { name:'WeChat Mini-Program' },
+        { name: 'Community' }
+      ]
+    },
 
-<<<<<<< HEAD
-const services = [
-  {
-    image: "/vite.svg",
-    title: "Digital Consulting",
-    content: " Find a 100% matched  digital solution for your needs."
-  },
-  {
-    image: "/react.svg",
-    title: "Product design",
-    content: "UI design"
-  },
-  {
-    image: "/vite.svg",
-    title: "Custom developement",
-    content: "mobile friendly"
-  },
-  {
-    image: "/react.svg",
-    title: "Wechat Mini-Program",
-    content: "The express way to bring your business into China market"
-  }
+    {
+      name: 'Triptrip',
+      qrcode_img: 'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/triptrip-QR.gif',
+      image: [
+        'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/triptrip1.gif',
+        'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/triptrip2.gif',
+        'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/triptrip3.gif',
+        'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/triptrip4.gif'
+      ],
+      description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
+      tags: [
+        { name:'Wechat Mini-Program' }
+      ]
+    },
 
-];
+    {
+      name: 'OE Biotech',
+      image: [
+        'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/OE1.gif',
+        'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Works/OE2.gif'
+      ],
+      description: 'OE Biotech',
+      tags: [
+        { name: 'Admin Panel' },
+        { name: 'Interactive Graph' }
+      ]
+    }
+  ]
+};
 
-const works = [
-  {
-    name: 'Hobos',
-    description: 'Hobos',
-    image: Hobos,
-    tags: [
-      { name: 'Wechat Mini-Program' },
-      { name: 'Community' },
-    ]
-  },
 
-  {
-    name: 'Triptrip',
-    description: 'A Wechat mini program designed to help local trip organizers post events, manage groups'
-  }
-]
-
-=======
 const services = {
   header: "Customize your business",
   services: [
@@ -96,14 +95,10 @@ const about = {
     video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Guangxin.mov",
   }]
 }
->>>>>>> cc8194f6f080c065e5f702f0688c9c7e0ddb5dd6
 export {
   contactInfo,
   socialMedia,
   services,
-<<<<<<< HEAD
+  about,
   works
-=======
-  about
->>>>>>> cc8194f6f080c065e5f702f0688c9c7e0ddb5dd6
 };

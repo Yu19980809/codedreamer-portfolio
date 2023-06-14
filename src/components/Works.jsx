@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { works } from '../constants';
 
-const ProjectCard = ( { name, description, qr_code_img: hobos_qr }) => ();
+const ProjectCard = ( { name, image, description, qrcode_img, tags }) => (
+  <div>{ name }</div>
+);
 
 const Works = () => {
   return (
