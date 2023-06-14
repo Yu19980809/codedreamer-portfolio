@@ -12,32 +12,50 @@ const socialMedia = [
 ];
 
 
-const services = [
-  {
-    image: "/vite.svg",
-    title: "Digital Consulting",
-    content: " Find a 100% matched  digital solution for your needs."
-  },
-  {
-    image: "/react.svg",
-    title: "Product design",
-    content: "UI design"
-  },
-  {
-    image: "/vite.svg",
-    title: "Custom developement",
-    content: "mobile friendly"
-  },
-  {
-    image: "/react.svg",
-    title: "Wechat Mini-Program",
-    content: "The express way to bring your business into China market"
-  }
-
-];
-
+const services = {
+  header: "Customize your business",
+  services: [
+    {
+      // image: "/react.svg",
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/1.gif",
+      title: "Digital Consulting",
+      content: " Find a 100% matched  digital solution for your needs."
+    },
+    {
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/2.gif",
+      title: "Product design",
+      content: "UI design"
+    },
+    {
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/3.gif",
+      title: "Custom developement",
+      content: "mobile friendly"
+    },
+    {
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/4.gif",
+      title: "Wechat Mini-Program",
+      content: "The express way to bring your business into China market"
+    }
+  ]
+};
+const about = {
+  avatar: [{
+    name: "Zora",
+    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Zora.mov",
+  },{
+    name: "Corrine",
+    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Corrine.mov",
+  },{
+    name: "Lizzie",
+    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Lizzie.mov",
+  },{
+    name: "Guangxin",
+    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Guangxin.mov",
+  }]
+}
 export {
   contactInfo,
   socialMedia,
-  services
+  services,
+  about
 };
