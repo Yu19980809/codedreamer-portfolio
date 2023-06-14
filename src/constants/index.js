@@ -36,8 +36,26 @@ const services = [
 
 ];
 
+const works = [
+  {
+    name: 'Hobos',
+    description: 'Hobos',
+    image: Hobos,
+    tags: [
+      { name: 'Wechat Mini-Program' },
+      { name: 'Community' },
+    ]
+  },
+
+  {
+    name: 'Triptrip',
+    description: 'A Wechat mini program designed to help local trip organizers post events, manage groups'
+  }
+]
+
 export {
   contactInfo,
   socialMedia,
-  services
+  services,
+  works
 };
