@@ -51,7 +51,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="flex justify-between items-center w-full min-h-[600px] py-[40px] bg-black-gradient rounded-[16px]">
+    <section id="Contact" className="flex justify-between items-center w-full min-h-[600px] py-[40px] bg-black-gradient rounded-[16px]">
       {/* left info part */}
       <div className="flex flex-col justify-around items-center gap-12 w-1/4 h-full border-r border-r-white">
         { contactInfo.map( info => (
