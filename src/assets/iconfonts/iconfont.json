@@ -1,0 +1,37 @@
+{
+  "id": "4124415",
+  "name": "codedreamer-portfolio",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "109762",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "996178",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "1021804",
+      "name": "ico_addr_pin",
+      "font_class": "icoaddrpin",
+      "unicode": "e6e5",
+      "unicode_decimal": 59109
+    },
+    {
+      "icon_id": "18977983",
+      "name": "phone-call",
+      "font_class": "phone-call",
+      "unicode": "e742",
+      "unicode_decimal": 59202
+    }
+  ]
+}
