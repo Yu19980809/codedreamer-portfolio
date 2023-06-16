@@ -17,22 +17,22 @@ const services = {
   services: [
     {
       // image: "/react.svg",
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/1.gif",
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/1.gif",
       title: "Digital Consulting",
       content: " Find a 100% matched  digital solution for your needs."
     },
     {
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/2.gif",
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/2.gif",
       title: "Product design",
       content: "UI design"
     },
     {
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/3.gif",
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/3.gif",
       title: "Custom developement",
       content: "mobile friendly"
     },
     {
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/services/4.gif",
+      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/4.gif",
       title: "Wechat Mini-Program",
       content: "The express way to bring your business into China market"
     }
