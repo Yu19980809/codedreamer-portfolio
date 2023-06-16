@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div id="Home" className="mt-[80px]">Hero</div>
   )
 }
 

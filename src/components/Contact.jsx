@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { contactInfo } from "../constants";
 import toast from 'react-hot-toast';
+import { contactInfo } from "../constants";
+import { styles } from '../styles';
 
 const InfoItem = ( { icon, name, value } ) => (
   <div className="flex flex-col items-center">
     <div className="relative flex justify-center items-center w-[48px] h-[48px]">
-      <img src={ icon } alt={ `icon of ${ name }` } className="w-[32px] h-[32px] object-contain" />
-
-      <span className="absolute inset-0 z-0 bg-primary rounded-full opacity-50 blur-lg"></span>
+      <span alt={ `icon of ${ name }` } className={ `iconfont ${ icon } text-primary md:text-[32px] text-[24px]` } />
+      <span className="absolute inset-0 z-0 bg-primary rounded-full opacity-50 blur-lg" />
     </div>
-    <p className="mt-2 text-white text-[18px] font-bold">{ name }</p>
-    <p className="text-dimWhite text-[14px]">{ value }</p>
+    <p className="mt-2 px-4 text-white text-[18px] font-bold">{ name }</p>
+    <p className="word-wrap px-4 text-dimWhite text-[14px] text-center">{ value }</p>
   </div>
 );
 
@@ -51,60 +51,62 @@ const Contact = () => {
   }
 
   return (
-    <section className="flex justify-between items-center w-full min-h-[600px] py-[40px] bg-black-gradient rounded-[16px]">
-      {/* left info part */}
-      <div className="flex flex-col justify-around items-center gap-12 w-1/4 h-full border-r border-r-white">
-        { contactInfo.map( info => (
-          <InfoItem key={ info.name } { ...info } />
-        ) ) }
-      </div>
-
-      {/* right form part */}
-      <div className="w-3/4 px-[100px]">
-        <div>
-          <h2 className="text-white text-[48px] font-bold">Send us a message</h2>
-          <p className="text-dimWhite text-[16px]">If you are interested in working with us or have any suggestions, you can send us a message from here. We’d love to hear from you.</p>
+    <section id="Contact" className={ `${ styles.paddingX } w-full` }>
+      <div className="flex md:flex-row flex-col-reverse justify-between items-center w-full min-h-[600px] md:px-0 px-[30px] md:py-[40px] py-[20px] bg-black-gradient rounded-[16px]">
+        {/* info part */}
+        <div className="flex md:flex-col flex-row justify-around md:gap-12 md:w-1/4 w-full md:mt-0 mt-[20px] md:pt-0 pt-[20px] md:border-r md:border-r-white md:border-t-0 border-t border-t-white">
+          { contactInfo.map( info => (
+            <InfoItem key={ info.name } { ...info } />
+          ) ) }
         </div>
 
-        <form onSubmit={ handleSubmit } className="mt-[20px]">
-          <input
-            type="text"
-            name="name"
-            value={ form.name }
-            placeholder="Enter your name"
-            onChange = { handleChange }
-            className="w-full h-[60px] px-8 py-2 rounded-[12px] outline-none focus:outline-primary"
-            required
-          />
+        {/* form part */}
+        <div className="md:w-3/4 w-full md:px-[100px]">
+          <div>
+            <h2 className="text-white md:text-[48px] text-[40px] font-bold">Send us a message</h2>
+            <p className="text-dimWhite text-[16px]">If you are interested in working with us or have any suggestions, you can send us a message from here. We’d love to hear from you.</p>
+          </div>
 
-          <input
-            type="email"
-            name="email"
-            value={ form.email }
-            placeholder="Enter your email"
-            onChange = { handleChange }
-            className="w-full h-[60px] mt-[12px] px-8 py-2 rounded-[12px] outline-none focus:outline-primary"
-            required
-          />
+          <form onSubmit={ handleSubmit } className="mt-[20px]">
+            <input
+              type="text"
+              name="name"
+              value={ form.name }
+              placeholder="Enter your name"
+              onChange = { handleChange }
+              className="w-full h-[60px] px-8 py-2 rounded-[12px] outline-none focus:outline-primary"
+              required
+            />
 
-          <textarea
-            name="message"
-            rows="10"
-            value={ form.message }
-            placeholder="Enter your message"
-            onChange = { handleChange }
-            className="w-full h-[120px] mt-[12px] px-8 py-2 rounded-[12px] outline-none focus:outline-primary"
-            required
-          />
+            <input
+              type="email"
+              name="email"
+              value={ form.email }
+              placeholder="Enter your email"
+              onChange = { handleChange }
+              className="w-full h-[60px] mt-[12px] px-8 py-2 rounded-[12px] outline-none focus:outline-primary"
+              required
+            />
 
-          <button
-            type="submit"
-            disabled={ submitting }
-            className="mt-[12px] px-8 py-2 text-gray-900 text-[18px] font-semibold bg-primary rounded-[12px] disabled:opacity-75"
-          >
-            { submitting ? 'Submitting...' : 'Contact Us' }
-          </button>
-        </form>
+            <textarea
+              name="message"
+              rows="10"
+              value={ form.message }
+              placeholder="Enter your message"
+              onChange = { handleChange }
+              className="w-full h-[120px] mt-[12px] px-8 py-2 rounded-[12px] outline-none focus:outline-primary"
+              required
+            />
+
+            <button
+              type="submit"
+              disabled={ submitting }
+              className="mt-[12px] px-8 py-2 text-gray-900 text-[18px] font-semibold bg-primary rounded-[12px] disabled:opacity-75"
+            >
+              { submitting ? 'Submitting...' : 'Contact Us' }
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   )
