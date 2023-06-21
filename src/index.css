@@ -24,6 +24,34 @@
   );
 }
 
+.bg-work-gradient {
+  background:linear-gradient(
+    210.81deg,
+    rgba(255, 255, 255, 0.6) -283.11%,
+    rgba(109, 109, 109, 0.6) -212.73%,
+    rgba(17, 16, 29, 0.6) 93.1%
+  );
+}
+
+.bg-work-active {
+  background:linear-gradient(
+    210.81deg,
+    #FFFFFF -283.11%,
+    #6D6D6D -212.73%,
+    #11101D 93.1%
+   );
+}
+
+.work-title {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
 .word-wrap {
   height: auto;
   word-wrap: break-word;

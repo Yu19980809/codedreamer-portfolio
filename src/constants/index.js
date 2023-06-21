@@ -23,7 +23,6 @@ const works = {
       //image
       name: 'Hobos',
       image:'/src/assets/images/Hobos-QR.jpeg',
-      description: 'Hobos',
       tags: [
         { name:'WeChat Mini-Program' },
         { name: 'Community' }
