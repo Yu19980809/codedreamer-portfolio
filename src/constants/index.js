@@ -17,6 +17,48 @@ const socialMedia = [
   { id: 'social-media-2', name: 'email', fontClass: 'icon-email', link: 'javascript:;' }
 ];
 
+const works = {
+  works: [
+    {
+      //image
+      name: 'Hobos',
+      image:'/src/assets/images/Hobos-QR.jpeg',
+      tags: [
+        { name:'WeChat Mini-Program' },
+        { name: 'Community' }
+      ]
+    },
+
+    {
+      name: 'Triptrip',
+      qrcode_img: '/src/assets/images/triptrip-QR.jpeg',
+      image: [
+        '/src/assets/images/triptrip1.png',
+        '/src/assets/images/triptrip2.png',
+        '/src/assets/images/triptrip3.png',
+        '/src/assets/images/triptrip4.png'
+      ],
+      description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
+      tags: [
+        { name:'Wechat Mini-Program' }
+      ]
+    },
+
+    {
+      name: 'OE Biotech',
+      image: [
+        '/src/assets/images/OE1.jpg',
+        '/src/assets/images/OE2.jpg'
+      ],
+      description: 'OE Biotech',
+      tags: [
+        { name: 'Admin Panel' },
+        { name: 'Interactive Graph' }
+      ]
+    }
+  ]
+};
+
 const services = {
   header: "Customize your business",
   services: [
@@ -62,6 +104,7 @@ const about = {
 export {
   contactInfo,
   socialMedia,
+  works,
   services,
   about,
   navbarLinks

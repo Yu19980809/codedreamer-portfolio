@@ -11,13 +11,15 @@ export default {
         purple: '#BC2AD7',
         white: '#ECEEEF',
         dimWhite: 'rgba(236, 238, 239, .7)',
+        textWhite: 'rgba(255, 255, 255, 0.7)',
         black: {
           500: '#353E43',
           900: '#02080B'
-        }
+        },
+        borderGrey: 'rgba(90, 86, 108, 1)',
+        textPurple: 'rgba(188, 42, 215, 0.20)'
       }
     },
   },
   plugins: [],
 }
-
