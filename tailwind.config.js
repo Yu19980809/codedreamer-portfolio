@@ -16,7 +16,8 @@ export default {
           500: '#353E43',
           900: '#02080B'
         },
-        borderGrey: 'rgba(90, 86, 108, 1)'
+        borderGrey: 'rgba(90, 86, 108, 1)',
+        textPurple: 'rgba(188, 42, 215, 0.20)'
       }
     },
   },
