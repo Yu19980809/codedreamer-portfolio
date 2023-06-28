@@ -19,10 +19,14 @@ const socialMedia = [
 
 const works = {
   works: [
+
+    //image
+
     {
-      //image
       name: 'Hobos',
+      qrcode_img:'/src/assets/images/Hobos-QR.jpeg',
       image:'/src/assets/images/Hobos-QR.jpeg',
+      description: 'A Wechat mini-program designed to organize open-mic commedian show.',
       tags: [
         { name:'WeChat Mini-Program' },
         { name: 'Community' }
