@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { works } from "../constants";
+import { works, baseAssetUrl } from "../constants";
 import { styles } from "../styles";
 import { useState } from "react";
 
@@ -8,7 +8,7 @@ const Works = () => {
   const [activeWork, setActiveWork] = useState(works.works[0].name);
 
   return (
-    <div className={`flex justify-between items-center ${styles.paddingX}`}>
+    <div id="Works" className={`flex justify-between items-center ${styles.paddingX}`}>
       {/* --------------------- left cards --------------------- */}
       <div className="flex w-[450px] flex-col space-y-[38px] justify-start">
         {/* every single card */}
@@ -91,7 +91,7 @@ const Works = () => {
         {activeWork === "Hobos" && (
           <img
             className="absolute w-28 top-[10px] left-[0px] rounded-full"
-            src="/src/assets/images/Hobos-QR.jpeg"
+            src={`${baseAssetUrl}/Works/Hobos-QR.jpeg`}
             alt=""
           />
         )}
@@ -101,22 +101,22 @@ const Works = () => {
             <img className="absolute w-28 top-[10px] left-[0px] rounded-full" src="/src/assets/images/triptrip-QR.jpeg" alt="" />
             <img
               className="absolute bottom-[84.41px] left-[96px]"
-              src="/src/assets/images/triptrip1.png"
+              src={`${baseAssetUrl}/Works/triptrip1.jpg`}
               alt=""
             />
             <img
               className="absolute bottom-[274.68px] left-[246.49px]"
-              src="/src/assets/images/triptrip2.png"
+              src={`${baseAssetUrl}/Works/triptrip2.jpg`}
               alt=""
             />
             <img
               className="absolute bottom-[12.99px] left-[376.79px]"
-              src="/src/assets/images/triptrip3.png"
+              src={`${baseAssetUrl}/Works/triptrip3.jpg`}
               alt=""
             />
             <img
               className="absolute bottom-[214.05px] right-[55px]"
-              src="/src/assets/images/triptrip4.png"
+              src={`${baseAssetUrl}/Works/triptrip4.jpg`}
               alt=""
             />
           </div>
@@ -125,12 +125,12 @@ const Works = () => {
           <div>
             <img
               className="absolute bottom-[30px] left-0"
-              src="/src/assets/images/OE1.jpg"
+              src={`${baseAssetUrl}/Works/OE1.jpg`}
               alt=""
             />
             <img
               className="absolute bottom-[30px] left-0"
-              src="/src/assets/images/OE2.jpg"
+              src={`${baseAssetUrl}/Works/OE2.jpg`}
               alt=""
             />
           </div>

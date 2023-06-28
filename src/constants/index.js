@@ -40,10 +40,10 @@ const works = {
       name: 'Triptrip',
       qrcode_img: `${baseAssetUrl}images/triptrip-QR.jpeg`,
       image: [
-        `${baseAssetUrl}/Works/triptrip1.png`,
-        `${baseAssetUrl}/Works/triptrip2.png`,
-        `${baseAssetUrl}/Works/triptrip3.png`,
-        `${baseAssetUrl}/Works/triptrip4.pn`
+        `${baseAssetUrl}/Works/triptrip1.jpg`,
+        `${baseAssetUrl}/Works/triptrip2.jpg`,
+        `${baseAssetUrl}/Works/triptrip3.jpg`,
+        `${baseAssetUrl}/Works/triptrip4.jpg`
       ],
       description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
       tags: [
@@ -109,6 +109,7 @@ const about = {
   }]
 }
 export {
+  baseAssetUrl,
   contactInfo,
   socialMedia,
   works,

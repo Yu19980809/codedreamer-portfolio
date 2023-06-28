@@ -1,9 +1,9 @@
-import React from "react";
 import { services } from "../constants";
+import { styles } from "../styles";
 
 const Services = () => {
   return (
-    <div className="flex flex-col items-center w-full my-12">
+    <div id="Services" className={ `${ styles.paddingX } w-full flex flex-col items-center w-full my-12` }>
       <div className="text-white text-[48px] font-bold my-6">
         {services.header}
       </div>
