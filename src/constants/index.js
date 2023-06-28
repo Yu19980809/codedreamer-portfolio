@@ -106,7 +106,9 @@ const about = {
   },{
     name: "Guangxin",
     video: `${baseAssetUrl}/About/Guangxin.mov`,
-  }]
+  }],
+  h1: "Codedreamer is a technology company that brings your digital dreams to life.",
+  h2: "Our team of expert developers, designers, and strategists represents diverse backgrounds and experiences, and we work collaboratively to build innovative and customized software solutions."
 }
 export {
   baseAssetUrl,

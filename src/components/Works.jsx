@@ -100,22 +100,22 @@ const Works = () => {
 
             <img className="absolute w-28 top-[10px] left-[0px] rounded-full" src="/src/assets/images/triptrip-QR.jpeg" alt="" />
             <img
-              className="absolute bottom-[84.41px] left-[96px]"
+              className="absolute bottom-[84.41px] left-[96px] w-[200px]"
               src={`${baseAssetUrl}/Works/triptrip1.jpg`}
               alt=""
             />
             <img
-              className="absolute bottom-[274.68px] left-[246.49px]"
+              className="absolute bottom-[274.68px] left-[246.49px] w-[250px]"
               src={`${baseAssetUrl}/Works/triptrip2.jpg`}
               alt=""
             />
             <img
-              className="absolute bottom-[12.99px] left-[376.79px]"
+              className="absolute bottom-[12.99px] left-[376.79px] w-[250px]"
               src={`${baseAssetUrl}/Works/triptrip3.jpg`}
               alt=""
             />
             <img
-              className="absolute bottom-[214.05px] right-[55px]"
+              className="absolute bottom-[214.05px] right-[55px] w-[200px]"
               src={`${baseAssetUrl}/Works/triptrip4.jpg`}
               alt=""
             />
@@ -124,12 +124,12 @@ const Works = () => {
         {activeWork === "OE Biotech" && (
           <div>
             <img
-              className="absolute bottom-[30px] left-0"
+              className="absolute bottom-[30px] left-0 w-[500px]"
               src={`${baseAssetUrl}/Works/OE1.jpg`}
               alt=""
             />
             <img
-              className="absolute bottom-[30px] left-0"
+              className="absolute bottom-[30px] left-0 w-[500px]"
               src={`${baseAssetUrl}/Works/OE2.jpg`}
               alt=""
             />

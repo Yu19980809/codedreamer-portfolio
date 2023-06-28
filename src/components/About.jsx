@@ -10,8 +10,8 @@ const About = () => {
   };
 
   return (
-    <div  id="About" className={ `${ styles.paddingX } w-full` }>
-      <div className="flex">
+    <div  id="About" className={ `${ styles.paddingX } w-full flex` }>
+      {/* <div className="flex">
         {about.avatar.map((avatar) => (
           <video
             src={avatar.video}
@@ -22,8 +22,9 @@ const About = () => {
             className="w-[150px]"
           />
         ))}
-      </div>
-      <div className="border relative w-[600px] h-[600px]">
+      </div> */}
+      {/* ------------ left ------------ */}
+      <div className="border relative w-[600px] h-[500px]">
         <video
           src={about.avatar[0].video}
           type="video/mov"
@@ -52,6 +53,12 @@ const About = () => {
           muted
           className="w-[300px] absolute top-[280px] left-[110px]"
         />
+      </div>
+
+      {/* ------------ right ------------ */}
+      <div className="w-[680px] p-14">
+        <h2 className="text-white text-[36px] font-bold my-4">{about.h1}</h2>
+        <p className="text-dimWhite text-[16px]">{about.h2}</p>
       </div>
     </div>
   );
