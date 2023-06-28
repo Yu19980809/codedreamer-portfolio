@@ -1,3 +1,6 @@
+// const baseAssetUrl = 'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/';
+const baseAssetUrl = '/src/assets/images/';
+
 const navbarLinks = [
   { name: 'Home' },
   { name: 'Services' },
@@ -24,8 +27,8 @@ const works = {
 
     {
       name: 'Hobos',
-      qrcode_img:'/src/assets/images/Hobos-QR.jpeg',
-      image:'/src/assets/images/Hobos-QR.jpeg',
+      qrcode_img: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
+      image: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
       description: 'A Wechat mini-program designed to organize open-mic commedian show.',
       tags: [
         { name:'WeChat Mini-Program' },
@@ -35,12 +38,12 @@ const works = {
 
     {
       name: 'Triptrip',
-      qrcode_img: '/src/assets/images/triptrip-QR.jpeg',
+      qrcode_img: `${baseAssetUrl}images/triptrip-QR.jpeg`,
       image: [
-        '/src/assets/images/triptrip1.png',
-        '/src/assets/images/triptrip2.png',
-        '/src/assets/images/triptrip3.png',
-        '/src/assets/images/triptrip4.png'
+        `${baseAssetUrl}/Works/triptrip1.png`,
+        `${baseAssetUrl}/Works/triptrip2.png`,
+        `${baseAssetUrl}/Works/triptrip3.png`,
+        `${baseAssetUrl}/Works/triptrip4.pn`
       ],
       description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
       tags: [
@@ -51,8 +54,8 @@ const works = {
     {
       name: 'OE Biotech',
       image: [
-        '/src/assets/images/OE1.jpg',
-        '/src/assets/images/OE2.jpg'
+        `${baseAssetUrl}/Works/OE1.jpg`,
+        `${baseAssetUrl}/Works/OE2.jpg`
       ],
       description: 'OE Biotech',
       tags: [
@@ -68,22 +71,22 @@ const services = {
   services: [
     {
       // image: "/react.svg",
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/1.gif",
+      image: `${baseAssetUrl}/Services/1.gif`,
       title: "Digital Consulting",
       content: " Find a 100% matched  digital solution for your needs."
     },
     {
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/2.gif",
+      image: `${baseAssetUrl}/Services/2.gif`,
       title: "Product design",
       content: "UI design"
     },
     {
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/3.gif",
+      image: `${baseAssetUrl}/Services/3.gif`,
       title: "Custom developement",
       content: "mobile friendly"
     },
     {
-      image: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/Services/4.gif",
+      image: `${baseAssetUrl}/Services/4.gif`,
       title: "Wechat Mini-Program",
       content: "The express way to bring your business into China market"
     }
@@ -93,16 +96,16 @@ const services = {
 const about = {
   avatar: [{
     name: "Zora",
-    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Zora.mov",
+    video: `${baseAssetUrl}/About/Zora.mov`,
   },{
     name: "Corrine",
-    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Corrine.mov",
+    video: `${baseAssetUrl}/About/Corrine.mov`,
   },{
     name: "Lizzie",
-    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Lizzie.mov",
+    video: `${baseAssetUrl}/About/Lizzie.mov`,
   },{
     name: "Guangxin",
-    video: "https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/About/Guangxin.mov",
+    video: `${baseAssetUrl}/About/Guangxin.mov`,
   }]
 }
 export {
