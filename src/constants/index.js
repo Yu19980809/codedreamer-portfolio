@@ -9,16 +9,9 @@ const navbarLinks = [
   { name: 'Contact' }
 ];
 
-const contactInfo = [
-  { icon: 'icon-icoaddrpin', name: 'Address', value: "Jing'an Shanghai" },
-  { icon: 'icon-phone-call', name: 'Phone', value: '+86 15172765447' },
-  { icon: 'icon-email', name: 'email', value: 'codedreamer@gmail.com' }
-];
-
-const socialMedia = [
-  { id: 'social-media-1', name: 'chat', fontClass: 'icon-message', link: 'javascript:;' },
-  { id: 'social-media-2', name: 'email', fontClass: 'icon-email', link: 'javascript:;' }
-];
+const hero = {
+  slogan: "Code the future you dream of"
+}
 
 const works = {
   works: [
@@ -110,12 +103,25 @@ const about = {
   h1: "Codedreamer is a technology company that brings your digital dreams to life.",
   h2: "Our team of expert developers, designers, and strategists represents diverse backgrounds and experiences, and we work collaboratively to build innovative and customized software solutions."
 }
+
+const contactInfo = [
+  { icon: 'icon-icoaddrpin', name: 'Address', value: "Jing'an Shanghai" },
+  { icon: 'icon-phone-call', name: 'Phone', value: '+86 15172765447' },
+  { icon: 'icon-email', name: 'email', value: 'codedreamer@gmail.com' }
+];
+
+const socialMedia = [
+  { id: 'social-media-1', name: 'chat', fontClass: 'icon-message', link: 'javascript:;' },
+  { id: 'social-media-2', name: 'email', fontClass: 'icon-email', link: 'javascript:;' }
+];
+
 export {
   baseAssetUrl,
-  contactInfo,
-  socialMedia,
+  navbarLinks,
+  hero,
   works,
   services,
   about,
-  navbarLinks
+  contactInfo,
+  socialMedia,
 };

@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <div  id="About" className={ `${ styles.paddingX } w-full flex` }>
+    <div  id="About" className={ `${styles.section} w-full flex md:p-20` }>
       {/* <div className="flex">
         {about.avatar.map((avatar) => (
           <video
@@ -24,41 +24,41 @@ const About = () => {
         ))}
       </div> */}
       {/* ------------ left ------------ */}
-      <div className="border relative w-[600px] h-[500px]">
+      <div className="relative w-1/3 h-[500px] ">
         <video
           src={about.avatar[0].video}
           type="video/mov"
           onMouseEnter={handlePlay}
           muted
-          className="w-[300px] absolute top-0 left-[130px]"
+          className="w-[300px] md:absolute md:top-0 md:left-[130px]"
         />
         <video
           src={about.avatar[1].video}
           type="video/mov"
           onMouseEnter={handlePlay}
           muted
-          className="w-[300px] absolute top-[140px] left-0"
+          className="w-[300px] md:absolute md:top-[140px] md:left-0"
         />
         <video
           src={about.avatar[2].video}
           type="video/mov"
           onMouseEnter={handlePlay}
           muted
-          className="w-[300px] absolute top-[140px] left-[240px]"
+          className="w-[300px] md:absolute md:top-[140px] md:left-[240px]"
         />
         <video
           src={about.avatar[3].video}
           type="video/mov"
           onMouseEnter={handlePlay}
           muted
-          className="w-[300px] absolute top-[280px] left-[110px]"
+          className="w-[300px] md:absolute md:top-[280px] md:left-[110px]"
         />
       </div>
 
       {/* ------------ right ------------ */}
-      <div className="w-[680px] p-14">
-        <h2 className="text-white text-[36px] font-bold my-4">{about.h1}</h2>
-        <p className="text-dimWhite text-[16px]">{about.h2}</p>
+      <div className="w-2/3 md:p-20 text-center p-2">
+        <h2 className="text-white md:text-[36px] text-[30px] font-bold my-4">{about.h1}</h2>
+        <p className="text-dimWhite md:text-[16px] text-[18px]">{about.h2}</p>
       </div>
     </div>
   );
