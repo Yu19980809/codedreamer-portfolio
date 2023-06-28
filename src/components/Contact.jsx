@@ -51,7 +51,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="Contact" className={ `${ styles.paddingX } ${styles.section} w-full` }>
+    <section id="Contact" className={ `${styles.section} w-full` }>
       <div className="flex md:flex-row flex-col-reverse justify-between items-center w-full min-h-[600px] md:px-0 px-[30px] md:py-[40px] py-[20px] bg-black-gradient rounded-[16px]">
         {/* info part */}
         <div className="flex md:flex-col flex-row justify-around md:gap-12 md:w-1/4 w-full md:mt-0 mt-[20px] md:pt-0 pt-[20px] md:border-r md:border-r-white md:border-t-0 border-t border-t-white">

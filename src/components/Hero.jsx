@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="Home"
-      className={`w-full ${styles.paddingX} h-screen flex flex-col items-center justify-center`}
+      className={`w-full ${styles.section} h-screen flex flex-col items-center justify-center`}
     >
       {/* 1. logo */}
       <p className="text-[60px] font-bold">

@@ -8,9 +8,9 @@ const Works = () => {
   const [activeWork, setActiveWork] = useState(works.works[0].name);
 
   return (
-    <div id="Works" className={`flex justify-between items-center ${styles.paddingX}`}>
+    <div id="Works" className={`flex justify-between items-center ${styles.section}`}>
       {/* --------------------- left cards --------------------- */}
-      <div className="flex w-[450px] flex-col space-y-[38px] justify-start">
+      <div className="flex w-1/3 flex-col space-y-[38px] justify-start">
         {/* every single card */}
         {works.works.map((work) => (
           <div
@@ -42,7 +42,7 @@ const Works = () => {
       </div>
 
       {/* --------------------- right image card --------------------- */}
-      <div className="flex w-[800px]  h-[666px] relative">
+      <div className="flex w-2/3  h-[666px] relative">
         {/* bg text */}
         <div className="flex w-[582px] h-[225px] flex-col justify-start">
 
