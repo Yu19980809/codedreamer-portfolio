@@ -10,7 +10,9 @@ const About = () => {
 
   return (
     <section id="About" className={`${styles.section} w-full `}>
-      <div className={`flex md:flex-row flex-col-reverse py-10`}>
+      <div className="md:hidden text-primary font-bold text-center">Who are we</div>
+
+      <div className={`flex md:flex-row flex-col-reverse md:p-10 pb-10`}>
         {/* <div className="flex">
         {about.avatar.map((avatar) => (
           <video

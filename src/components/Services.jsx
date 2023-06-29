@@ -8,6 +8,7 @@ const Services = () => {
   console.log(import.meta.env);
   return (
     <section id="Services" className={`${styles.section}`}>
+      <div className="md:hidden text-primary font-bold text-center">What we do</div>
       <div
         className={`w-full flex flex-col items-center w-full mb-28`}
       >

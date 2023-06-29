@@ -8,6 +8,7 @@ const Works = () => {
 
   return (
     <section id="Works" className={`${styles.section} w-full `}>
+      <div className="md:hidden text-primary font-bold text-center">What we&apos;ve done</div>
       <div
         className={`flex justify-between items-center`}
       >
