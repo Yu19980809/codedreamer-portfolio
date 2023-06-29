@@ -63,7 +63,7 @@ const Contact = () => {
         {/* form part */}
         <div className="md:w-3/4 w-full md:px-[100px]">
           <div>
-            <h2 className="text-white md:text-5xl text-2xl font-bold py-4">Send us a message</h2>
+            <h2 className="text-white md:text-5xl text-2xl font-bold md:py-4 pb-4 ">Send us a message</h2>
             <p className="text-dimWhite md:text-lg text-ml">If you are interested in working with us or have any suggestions, you can send us a message from here. We’d love to hear from you.</p>
           </div>
 
