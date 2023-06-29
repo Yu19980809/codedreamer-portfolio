@@ -4,8 +4,8 @@ const baseAssetUrl = '/src/assets/images/';
 const navbarLinks = [
   { name: 'Home' },
   { name: 'Services' },
-  { name: 'About' },
   { name: 'Works' },
+  { name: 'About' },
   { name: 'Contact' }
 ];
 
