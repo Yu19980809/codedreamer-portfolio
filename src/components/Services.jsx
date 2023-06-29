@@ -7,7 +7,7 @@ const Services = () => {
       <div className="text-white text-[30px] text-center md:text-[48px] font-bold my-6">
         {services.header}
       </div>
-      <div className="grid md:grid-cols-4 gap-12 grid-cols-1">
+      <div className="grid md:grid-cols-4 gap-12 grid-cols-1 my-6">
         {services.services.map((service) => (
           <div key={service.title}  className="flex flex-col items-center content-center text-center mt-6">
             <img src={service.image} className="md:w-[230px] w-[100px]"/>
