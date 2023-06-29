@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div
       id="Services"
-      className={`${styles.section} w-full flex flex-col items-center w-full my-12`}
+      className={`${styles.section} w-full flex flex-col items-center w-full mb-28`}
     >
       {/* <div className="text-white text-[30px] text-center md:text-[48px] font-bold my-6">
         {services.header}
