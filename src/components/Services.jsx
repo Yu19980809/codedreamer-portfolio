@@ -1,7 +1,10 @@
 import { services } from "../constants";
 import { styles } from "../styles";
 
+// process.env.NODE_ENV !== "production" && require("../mocks/services");
+
 const Services = () => {
+  console.log(import.meta.env)
   return (
     <div id="Services" className={ `${ styles.section } w-full flex flex-col items-center w-full my-12` }>
       <div className="text-white text-[30px] text-center md:text-[48px] font-bold my-6">

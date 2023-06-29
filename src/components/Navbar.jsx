@@ -24,7 +24,7 @@ const Navbar = () => {
   } );
 
   return (
-    <nav className={ `${ styles.paddingX } ${ isNavbarFixed ? 'fixed top-0 bg-black-900' : '' } w-full max-w-[1536px] z-10` }>
+    <nav className={ `${ styles.paddingX } ${ isNavbarFixed ? 'bg-black-900' : '' } fixed top-0 w-full z-10` }>
       <div className="flex justify-between items-center w-full h-[80px]">
         {/* logo */}
         <div className="flex items-center">
@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
           ) ) }
         </ul>
-        
+
         {/* links on small and midium screen */}
         <div className="md:hidden flex flex-col justify-end items-center gap-5">
           <img
