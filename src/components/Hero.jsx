@@ -1,19 +1,32 @@
+import { motion } from 'framer-motion';
+import { HeroCanvas } from './canvas';
 import { styles } from "../styles";
-// import { logo } from "../assets/images";
-import { hero } from "../constants";
 
 const Hero = () => {
   return (
     <div
       id="Home"
-      className={`w-full mt-0 ${styles.section}  h-screen flex flex-col items-center justify-center`}
+      className={`relative w-full mt-0 ${ styles.paddingX } h-screen flex flex-col items-center justify-center`}
     >
-      {/* 1. logo */}
-      <p className="md:text-7xl text-3xl font-bold">
-        Code<span className="text-primary">Dreamer</span>
-      </p>
-      {/* 2.slogan */}
-      <h2 className="md:text-4xl text-lg">{hero.slogan}</h2>
+      <HeroCanvas />
+
+      <div className="absolute xs:bottom-10 bottom-12 w-full flex flex-col justify-center items-center gap-[20px]">
+        <a href="#Works">
+          <div className="w-[35px] h-[64px] flex justify-center items-start p-2 rounded-3xl border-4 border-dimWhite">
+            <motion.div
+              animate={ { y: [ 0, 24, 0 ] } }
+              transition={ {
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: 'loop'
+              } }
+              className="w-3 h-3 mb-1 rounded-full bg-dimWhite"
+            />
+          </div>
+        </a>
+
+        <p className="text-dimWhite text-[16px]">Scroll up to see more</p>
+      </div>
     </div>
   );
 };

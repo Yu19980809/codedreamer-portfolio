@@ -24,7 +24,7 @@ const Navbar = () => {
   } );
 
   return (
-    <nav className={ `${ styles.paddingX } ${ isNavbarFixed ? 'bg-black-900' : '' } fixed top-0 w-full z-10` }>
+    <nav className={ `${ styles.paddingX } ${ isNavbarFixed ? 'bg-black-900' : '' } fixed top-0 w-full max-w-[1536px] z-10` }>
       <div className="flex justify-between items-center w-full h-[80px]">
         {/* logo */}
         <div className="flex items-center">

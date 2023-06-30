@@ -1,3 +1,7 @@
 import StarsCanvas from './Stars';
+import HeroCanvas from './Hero';
 
-export default StarsCanvas;
+export {
+  StarsCanvas,
+  HeroCanvas
+};

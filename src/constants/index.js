@@ -13,51 +13,47 @@ const hero = {
   slogan: "Code the future you dream of"
 }
 
-const works = {
-  works: [
-
-    //image
-
-    {
-      name: 'Hobos',
-      qrcode_img: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
-      image: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
-      description: 'A Wechat mini-program designed to organize open-mic commedian show.',
-      tags: [
-        { name:'WeChat Mini-Program' },
-        { name: 'Community' }
-      ]
-    },
-
-    {
-      name: 'Triptrip',
-      qrcode_img: `${baseAssetUrl}images/triptrip-QR.jpeg`,
-      image: [
-        `${baseAssetUrl}/Works/triptrip1.jpg`,
-        `${baseAssetUrl}/Works/triptrip2.jpg`,
-        `${baseAssetUrl}/Works/triptrip3.jpg`,
-        `${baseAssetUrl}/Works/triptrip4.jpg`
-      ],
-      description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
-      tags: [
-        { name:'Wechat Mini-Program' }
-      ]
-    },
-
-    {
-      name: 'OE Biotech',
-      image: [
-        `${baseAssetUrl}/Works/OE1.jpg`,
-        `${baseAssetUrl}/Works/OE2.jpg`
-      ],
-      description: 'OE Biotech',
-      tags: [
-        { name: 'Admin Panel' },
-        { name: 'Interactive Graph' }
-      ]
-    }
-  ]
-};
+const works = [
+  {
+    name: 'Hobos',
+    qrcode_img: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
+    image: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
+    description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
+    icon: 'icon-xiaochengxu1',
+    tags: [
+      { name:'WeChat Mini-Program' },
+      { name: 'Community' }
+    ]
+  },
+  {
+    name: 'Triptrip',
+    qrcode_img: `${baseAssetUrl}images/triptrip-QR.jpeg`,
+    image: [
+      `${baseAssetUrl}/Works/triptrip1.jpg`,
+      `${baseAssetUrl}/Works/triptrip2.jpg`,
+      `${baseAssetUrl}/Works/triptrip3.jpg`,
+      `${baseAssetUrl}/Works/triptrip4.jpg`
+    ],
+    description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
+    icon: 'icon-kaifarenwu',
+    tags: [
+      { name:'Wechat Mini-Program' }
+    ]
+  },
+  {
+    name: 'OE Biotech',
+    image: [
+      `${baseAssetUrl}/Works/OE1.jpg`,
+      `${baseAssetUrl}/Works/OE2.jpg`
+    ],
+    description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
+    icon: 'icon-wangye',
+    tags: [
+      { name: 'Admin Panel' },
+      { name: 'Interactive Graph' }
+    ]
+  }
+];
 
 const services = {
   header: "Customize your business",
