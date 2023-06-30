@@ -42,6 +42,21 @@
    );
 }
 
+.works-card {
+  height: 120px;
+  overflow: hidden;
+  transition: height .5s linear 0s;
+}
+.works-card-active {
+  height: 200px;
+  background:linear-gradient(
+    210.81deg,
+    #FFFFFF -283.11%,
+    rgba(236, 238, 239, .7) -212.73%,
+    #11101D 120%
+   );
+}
+
 .work-title {
   font-family: Poppins;
   font-size: 36px;
