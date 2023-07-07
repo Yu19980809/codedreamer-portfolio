@@ -1,15 +1,43 @@
 import { motion } from 'framer-motion';
-import { HeroCanvas } from './canvas';
+import { PlanetCanvas } from './canvas';
+import { slideIn } from '../utils/motion';
 import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <div
-      id="Home"
-      className={`relative w-full mt-0 ${ styles.paddingX } h-screen flex flex-col items-center justify-center`}
-    >
-      <HeroCanvas />
+    <div id="Home" className={`relative w-full mt-0 ${ styles.paddingX } h-screen flex flex-col items-center justify-center`} >
+      {/* main content */}
+      <div className="flex lg:flex-row flex-col-reverse justify-center items-center w-full h-screen">
+        {/* text */}
+        <motion.div
+          variants={ slideIn( 'left', 'spring', 0.2, 1 ) }
+          initial="hidden"
+          animate="show"
+          className="flex justify-center items-center lg-[60%] w-full"
+        >
+          <div>
+            <h1 className="sm:text-[72px] text-[48px] font-bold" style={{textShadow: "4px 4px 4px rgba(236, 238, 239, .7)"}}>
+              Code <span className="text-primary primary-text-shadow" style={{textShadow: "4px 4px 4px rgba(228, 206, 27, .7)"}}>the future</span><br/> you dream of
+            </h1>
 
+            <div className="mt-[50px] lg:text-left text-center">
+              <a href="#Contact" className="px-8 py-3 text-[18px] font-semibold bg-primary rounded-md">Contact Us</a>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* canvas */}
+        <motion.div
+          variants={ slideIn( 'right', 'spring', 0.2, 1 ) }
+          initial="hidden"
+          animate="show"
+          className="lg:w-[40%] w-full lg:h-[550px] h-[350px]"
+        >
+          <PlanetCanvas />
+        </motion.div>
+      </div>
+
+      {/* scroll up tips */}
       <div className="absolute xs:bottom-10 bottom-12 w-full flex flex-col justify-center items-center gap-[20px]">
         <a href="#Works">
           <div className="w-[35px] h-[64px] flex justify-center items-start p-2 rounded-3xl border-4 border-dimWhite">
