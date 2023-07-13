@@ -2,7 +2,7 @@
 import { styles } from '../styles';
 
 const Footer = () => (
-  <footer className={ `${ styles.paddingX }` }>
+  <footer id="Footer" className={ `${ styles.section}` }>
     {/* <div className="flex justify-between items-center w-full h-[80px] mt-[80px] border-t border-t-dimWhite text-dimWhite">
       <p className="md:text-base text-xs">2023 CodeDreamer All Rights Reserved.</p>
 
@@ -19,8 +19,8 @@ const Footer = () => (
       </div>
     </div> */}
 
-    <div className="w-full h-[80px] mt-[80px] text-center leading-[80px] border-t border-t-dimWhite text-dimWhite">
-      <p className="text-[16px]">2023 CodeDreamer All Rights Reserved.</p>
+    <div className="w-full h-[80px] text-center leading-[80px] border-t border-t-dimWhite text-dimWhite">
+      <p className="text-[14px]">2023 CodeDreamer All Rights Reserved.</p>
     </div>
   </footer>
 );
