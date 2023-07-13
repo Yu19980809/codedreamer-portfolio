@@ -72,3 +72,10 @@
   word-wrap: break-word;
   word-break: break-all;
 }
+
+.position-center {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX( -50% );
+}

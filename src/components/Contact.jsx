@@ -5,13 +5,13 @@ import { contactInfo } from "../constants";
 import { styles } from '../styles';
 
 const InfoItem = ( { icon, name, value, totalNum } ) => (
-  <div className={`flex flex-col items-center md:w-auto w-1/${totalNum} px-1`}>
+  <div className={`flex flex-col items-center lg:w-auto w-1/${totalNum} px-1`}>
     <div className="relative flex justify-center items-center w-[48px] h-[48px]">
-      <span alt={ `icon of ${ name }` } className={ `iconfont ${ icon } text-primary md:text-[32px] text-[24px]` } />
+      <span alt={ `icon of ${ name }` } className={ `iconfont ${ icon } text-primary lg:text-[32px] text-[24px]` } />
       <span className="absolute inset-0 z-0 bg-primary rounded-full opacity-50 blur-lg" />
     </div>
     <p className="mt-2 text-white text-[18px] font-bold">{ name }</p>
-    <p className="word-wrap text-dimWhite md:text-ml text-xs text-center">{ value }</p>
+    <p className="word-wrap text-dimWhite lg:text-ml text-xs text-center">{ value }</p>
   </div>
 );
 
@@ -52,19 +52,19 @@ const Contact = () => {
 
   return (
     <section id="Contact" className={ `${styles.section} w-full` }>
-      <div className="flex md:flex-row flex-col-reverse justify-between w-full min-h-[600px] md:p-[60px] p-[30px] rounded-[16px] bg-work-gradient">
+      <div className="flex lg:flex-row flex-col-reverse justify-between w-full min-h-[600px] lg:p-[60px] p-[30px] rounded-[16px] bg-work-gradient">
         {/* info part */}
-        <div className="flex md:flex-col flex-row justify-around md:w-1/4 w-full md:mt-0 mt-[20px] md:pt-0 pt-[20px] md:border-r md:border-r-white md:border-t-0 border-t border-t-white">
+        <div className="flex lg:flex-col flex-row justify-around lg:w-1/4 w-full lg:mt-0 mt-[20px] lg:pt-0 pt-[20px] lg:border-r lg:border-r-white lg:border-t-0 border-t border-t-white">
           { contactInfo.map( info => (
             <InfoItem key={ info.name } { ...info } totalNum={contactInfo.length}/>
           ) ) }
         </div>
 
         {/* form part */}
-        <div className="md:w-3/4 w-full md:px-[100px]">
+        <div className="lg:w-3/4 w-full lg:px-[100px]">
           <div>
-            <h2 className="text-white md:text-5xl text-2xl font-bold md:py-4 pb-4 ">Send us a message</h2>
-            <p className="text-dimWhite md:text-lg text-ml">If you are interested in working with us or have any suggestions, you can send us a message from here. We’d love to hear from you.</p>
+            <h2 className="text-white lg:text-5xl text-2xl lg:text-left text-center font-bold lg:py-4 pb-4 ">Send us a message</h2>
+            <p className="text-dimWhite lg:text-lg text-ml">If you are interested in working with us or have any suggestions, you can send us a message from here. We’d love to hear from you.</p>
           </div>
 
           <form onSubmit={ handleSubmit } className="mt-[20px]">
@@ -74,7 +74,7 @@ const Contact = () => {
               value={ form.name }
               placeholder="Enter your name"
               onChange = { handleChange }
-              className="w-full p-3 md:p-4 rounded-md bg-transparent border border-dimWhite focus:outline-primary"
+              className="w-full p-3 lg:p-4 rounded-md bg-transparent border border-dimWhite focus:outline-primary"
               required
             />
 
@@ -84,7 +84,7 @@ const Contact = () => {
               value={ form.email }
               placeholder="Enter your email"
               onChange = { handleChange }
-              className="w-full mt-5 p-3 md:p-4 rounded-md bg-transparent border border-dimWhite focus:outline-primary"
+              className="w-full mt-5 p-3 lg:p-4 rounded-md bg-transparent border border-dimWhite focus:outline-primary"
               required
             />
 
@@ -94,14 +94,14 @@ const Contact = () => {
               value={ form.message }
               placeholder="Enter your message"
               onChange = { handleChange }
-              className="w-full h-[120px] mt-5 p-3 md:p-4 rounded-md bg-transparent border border-dimWhite focus:outline-primary"
+              className="w-full h-[120px] mt-5 p-3 lg:p-4 rounded-md bg-transparent border border-dimWhite focus:outline-primary"
               required
             />
 
             <button
               type="submit"
               disabled={ submitting }
-              className="mt-[12px] md:w-auto w-full px-8 py-2 text-gray-900 text-[18px] font-semibold bg-primary rounded-md disabled:opacity-75"
+              className="mt-[12px] lg:w-auto w-full px-8 py-2 text-gray-900 text-[18px] font-semibold bg-primary rounded-md disabled:opacity-75"
             >
               { submitting ? 'Submitting...' : 'Contact Us' }
             </button>

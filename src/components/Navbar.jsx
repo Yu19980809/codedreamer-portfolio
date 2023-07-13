@@ -13,13 +13,25 @@ const Navbar = () => {
       const scrollY = window.scrollY;
       ( scrollY > 80 ) ?  setIsNavbarFixed( true ) : setIsNavbarFixed( false );
 
-      // if ( scrollY <= 80 ) {
-      //   setCurrentSection( 'Home' )
-      // } else if ( scrollY <= 100 ) {
-      //   setCurrentSection( 'Services' )
-      // } else if ( scrollY <= 120 ) {
-      //   setCurrentSection( 'Works' )
-      // }
+      const services = document.querySelector( '#Services' );
+      const works = document.querySelector( '#Works' );
+      const about = document.querySelector( '#About' );
+      const contact = document.querySelector( '#Contact' );
+      const footer = document.querySelector( '#Footer' );
+      
+      if ( scrollY < services.offsetTop ) {
+        setCurrentSection( 'Home' );
+      } else if ( scrollY < works.offsetTop -80 ) {
+        setCurrentSection( 'Services' );
+      } else if ( scrollY < about.offsetTop -80 ) {
+        setCurrentSection( 'Works' );
+      } else if ( scrollY < contact.offsetTop - 80 ) {
+        setCurrentSection( 'About' );
+      } else if ( scrollY < footer.offsetTop - 80 ) {
+        setCurrentSection( 'Contact' );
+      } else {
+        setCurrentSection( 'Home' );
+      }
     } );
   } );
 
