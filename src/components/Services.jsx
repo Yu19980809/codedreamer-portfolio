@@ -25,7 +25,11 @@ const Services = () => (
           >
             <img src={service.image} className="md:w-[230px] w-[80px]" />
             <div className="text-[20px] my-3">{service.title}</div>
-            <div className="max-w-[300px] text-dimWhite">{service.content}</div>
+            <div className="max-w-[300px] text-dimWhite">
+              {service.content.map((content) => (
+                <div className="" key={content}>{content}</div>
+              ))}
+            </div>
           </div>
         ))}
       </div>

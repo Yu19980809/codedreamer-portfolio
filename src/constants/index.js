@@ -1,4 +1,6 @@
 import { triptrip, oe, hobos } from '../assets/images';
+// import { corrine, guangxin, lizzie, zora } from '../assets/images';
+import { service1, service2, service3, service4 } from '../assets/images';
 
 // const baseAssetUrl = 'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/';
 const baseAssetUrl = '/src/assets/images/';
@@ -65,24 +67,43 @@ const services = {
   services: [
     {
       // image: "/react.svg",
-      image: `${baseAssetUrl}/Services/1.gif`,
+      // image: `${baseAssetUrl}/Services/1.gif`,
+      image: service1,
       title: "Digital Consulting",
-      content: " Find a 100% matched  digital solution for your needs."
+      content: [
+        "• Find a 100% matched  digital solution for your needs.",
+        "• Digital transformation for traditional enterprises",
+        "• Digital Marketing"]
     },
     {
-      image: `${baseAssetUrl}/Services/2.gif`,
+      // image: `${baseAssetUrl}/Services/2.gif`,
+      image: service2,
       title: "Product design",
-      content: "UI design"
+      content: [
+        "• User research",
+        "• UI design",
+        "• User flow design",
+        "• Competitor analysis"
+      ]
     },
     {
-      image: `${baseAssetUrl}/Services/3.gif`,
+      // image: `${baseAssetUrl}/Services/3.gif`,
+      image: service3,
       title: "Custom developement",
-      content: "mobile friendly"
+      content: [
+        "• mobile friendly",
+        "• cross-platform",
+        "• scalable"
+      ]
     },
     {
-      image: `${baseAssetUrl}/Services/4.gif`,
+      // image: `${baseAssetUrl}/Services/4.gif`,
+      image: service4,
       title: "Wechat Mini-Program",
-      content: "The express way to bring your business into China market"
+      content: [
+        "• The express way to bring your business into China market",
+        "• WeChat Official Account integration",
+      ]
     }
   ]
 };
@@ -90,16 +111,20 @@ const services = {
 const about = {
   avatar: [{
     name: "Zora",
-    video: `${baseAssetUrl}/About/Zora.mov`,
+    // video: `${baseAssetUrl}/About/Zora.mov`,
+    video: '/Zora.mov',
   },{
     name: "Corrine",
-    video: `${baseAssetUrl}/About/Corrine.mov`,
+    // video: `${baseAssetUrl}/About/Corrine.mov`,
+    video: '/Corrine.mov',
   },{
     name: "Lizzie",
-    video: `${baseAssetUrl}/About/Lizzie.mov`,
+    // video: `${baseAssetUrl}/About/Lizzie.mov`,
+    video: '/Lizzie.mov',
   },{
     name: "Guangxin",
-    video: `${baseAssetUrl}/About/Guangxin.mov`,
+    // video: `${baseAssetUrl}/About/Guangxin.mov`,
+    video: '/Guangxin.mov',
   }],
   h1: "Codedreamer is a technology company that brings your digital dreams to life.",
   h2: "Our team of expert developers, designers, and strategists represents diverse backgrounds and experiences, and we work collaboratively to build innovative and customized software solutions."
