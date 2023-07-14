@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { works } from "../constants";
-// import { logo } from '../assets/images';
 import { styles } from "../styles";
 
 const ProjectCard = ( { name, description, tags, icon, isActive, index, handleClick } ) => (
@@ -32,17 +31,17 @@ const ProjectCard = ( { name, description, tags, icon, isActive, index, handleCl
 );
 
 const MobileScreenCard = ( { name, description, tags, image } ) => (
-  <div className="flex flex-col w-full px-[50px]" >
+  <div className="flex flex-col w-full" >
     <div className="flex flex-col px-[40px] py-[8px] text-dimWhite bg-work-gradient rounded-[20px] cursor-pointer">
-      <h2 className="text-white text-[32px] font-bold text-center">{ name }</h2>
+      <h2 className="text-white sm:text-[32px] text-[24px] font-bold text-center">{ name }</h2>
 
-      <p className="mt-[20px] text-[16px] text-dimWhite text-center leading-[24px]">{ description }</p>
+      <p className="mt-[20px] sm:text-[16px] text-[14px] text-dimWhite text-center leading-[24px]">{ description }</p>
 
       <div className="flex flex-wrap justify-center items-center gap-[12px] mt-[16px]">
         { tags.map( tag => (
           <div
             key={ tag.name }
-            className="px-[12px] py-[4px] text-[12px] text-dimWhite border rounded-[20px]"
+            className="px-[12px] py-[4px] sm:text-[12px] text-[10px] text-dimWhite border rounded-[20px]"
           >
             { tag.name }
           </div>

@@ -108,7 +108,7 @@ const about = {
 const contactInfo = [
   { icon: 'icon-icoaddrpin', name: 'Address', value: "Jing'an Shanghai" },
   { icon: 'icon-phone-call', name: 'Phone', value: '+86 15172765447' },
-  { icon: 'icon-email', name: 'Email', value: 'codedreamer@gmail.com' }
+  { icon: 'icon-email', name: 'Email', value: 'codedreamer.technology@gmail.com' }
 ];
 
 const socialMedia = [

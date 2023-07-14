@@ -16,8 +16,8 @@ const Hero = () => {
           className="flex justify-center items-center lg-[60%] w-full"
         >
           <div>
-            <h1 className="sm:text-[72px] text-[48px] font-bold" style={{textShadow: "4px 4px 4px rgba(236, 238, 239, .7)"}}>
-              Code <span className="text-primary primary-text-shadow" style={{textShadow: "4px 4px 4px rgba(228, 206, 27, .7)"}}>the future</span><br/> you dream of
+            <h1 className="xl:text-[72px] lg:text-[52px] sm:text-[36px] text-[24px] font-bold" style={{textShadow: "4px 4px 4px rgba(236, 238, 239, .7)"}}>
+              Code <span className="text-primary" style={{textShadow: "4px 4px 4px rgba(228, 206, 27, .7)"}}>the future</span><br/> you dream of
             </h1>
 
             <div className="mt-[50px] lg:text-left text-center">
@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
 
       {/* scroll up tips */}
-      <div className="absolute xs:bottom-10 bottom-12 w-full flex flex-col justify-center items-center gap-[20px]">
+      <div className="absolute sm:bottom-10 bottom-0 w-full flex flex-col justify-center items-center gap-[20px]">
         <a href="#Works">
           <div className="w-[35px] h-[64px] flex justify-center items-start p-2 rounded-3xl border-4 border-dimWhite">
             <motion.div
