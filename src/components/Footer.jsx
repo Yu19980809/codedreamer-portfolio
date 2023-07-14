@@ -2,7 +2,7 @@
 import { styles } from '../styles';
 
 const Footer = () => (
-  <footer id="Footer" className={ `${ styles.section}` }>
+  <footer id="Footer" className={ `${ styles.paddingX } pt-[80px]` }>
     {/* <div className="flex justify-between items-center w-full h-[80px] mt-[80px] border-t border-t-dimWhite text-dimWhite">
       <p className="md:text-base text-xs">2023 CodeDreamer All Rights Reserved.</p>
 
