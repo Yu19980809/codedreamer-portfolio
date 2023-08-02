@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { works } from "../constants";
-import { styles } from "../styles";
 
 const ProjectCard = ( { name, description, tags, icon, isActive, index, handleClick } ) => (
   <div
@@ -75,7 +74,7 @@ const Works = () => {
   const handleClick = index => setActiveWorkIndex( index );
 
   return (
-    <section id="Works" className={ `${ styles.section } w-full` }>
+    <section id="Works" className="md:mt-[120px] mt-[80px]">
       <div className="md:hidden text-primary font-bold text-center">Featured projects</div>
 
       <div className="md:flex hidden justify-between items-center lg:gap-[50px] gap-[30px]">

@@ -1,40 +1,42 @@
 import { services } from "../constants";
-import { styles } from "../styles";
 import { Typewriter } from "react-simple-typewriter";
 
 const Services = () => (
-  <section id="Services" className={`${styles.section} w-full`}>
+  <section id="Services" className="md:mt-[120px] mt-[80px]">
     <div className="md:hidden text-primary font-bold text-center">What we do</div>
-    <div className={`w-full flex flex-col items-center w-full`} >
-      <div className="flex text-white text-2xl text-center md:text-5xl font-bold mt-6">
+
+    <div className="flex flex-col items-center">
+      {/* title */}
+      <div className="w-full my-[8px] text-center text-white md:text-[48px] text-[24px] font-bold">
         <Typewriter
-          words={[services.header]}
+          words={['Customize your business']}
           loop={false}
           cursor
-          // cursorStyle="_"
           typeSpeed={80}
           deleteSpeed={120}
           delaySpeed={1000}
         />
       </div>
-      <div className="grid md:grid-cols-4 gap-12 grid-cols-1 my-6">
-        {services.services.map((service) => (
+
+      {/* lists */}
+      <div className="flex md:flex-row flex-col md:justify-around justify-center items-center">
+        { services.map( item => (
           <div
-            key={service.title}
-            className="flex flex-col items-center content-center text-center mt-6"
+            key={ item.title }
+            className="flex flex-col items-center mt-[30px]"
           >
-            <img src={service.image} className="md:w-[230px] w-[80px]" />
-            <div className="text-[20px] my-3">{service.title}</div>
-            <div className="max-w-[300px] text-dimWhite">
-              {service.content.map((content) => (
-                <div className="" key={content}>{content}</div>
-              ))}
-            </div>
+            <img src={ item.image } className="md:w-[230px] w-[80px] rounded-[12px]" />
+            <div className="my-[12px] text-[20px]">{ item.title }</div>
+            <ul className="max-w-[300px] lg:text-[16px] text-[12px] text-dimWhite list-disc" >
+              { item.content.map( ( content, index ) => (
+                <li key={ index } className="text-left">{ content }</li>
+              ) ) }
+            </ul>
           </div>
-        ))}
+        ) ) }
       </div>
     </div>
   </section>
-);
+)
 
 export default Services;

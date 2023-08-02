@@ -20,7 +20,7 @@ const Planet = () => {
 const PlanetCanvas = () => {
   return (
     <Canvas
-      shadow
+      shadow="true"
       frameloop="demand"
       gl={ { preserveDrawingBuffer: true } }
       camera={ {

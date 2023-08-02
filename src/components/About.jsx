@@ -1,11 +1,10 @@
 import { about } from "../constants";
-import { styles } from "../styles";
 
 const About = () => {
   const handlePlay = e => e.target.play();
 
   return (
-    <section id="About" className={`${styles.section} w-full`}>
+    <section id="About" className='md:mt-[120px] mt-[80px]'>
       <div className="md:hidden text-primary font-bold text-center">Who we are</div>
 
       <div className={`flex lg:flex-row lg:justify-between flex-col-reverse items-center`}>
@@ -18,7 +17,7 @@ const About = () => {
               src={ avatar.video }
               muted
               onMouseEnter={ handlePlay }
-              className="lg:w-[200px] md:w-[150px] w-[100px]"
+              className="lg:w-[200px] md:w-[150px] w-1/4"
             />
           ) ) }
         </div>

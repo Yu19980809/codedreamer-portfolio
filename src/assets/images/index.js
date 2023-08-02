@@ -14,6 +14,7 @@ import service1 from './Services/1.gif';
 import service2 from './Services/2.gif';
 import service3 from './Services/3.gif';
 import service4 from './Services/4.gif';
+import test from './Services/test.gif';
 
 export {
   logo,
@@ -29,5 +30,6 @@ export {
   service1,
   service2,
   service3,
-  service4
+  service4,
+  test
 };
