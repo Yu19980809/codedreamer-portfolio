@@ -2,7 +2,6 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import { contactInfo } from "../constants";
-import { styles } from '../styles';
 
 const InfoItem = ( { icon, name, value, totalNum } ) => (
   <div className={`flex flex-col items-center lg:w-auto w-1/${totalNum} px-1`}>
@@ -51,7 +50,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="Contact" className={ `${styles.section} w-full` }>
+    <section id="Contact" className="md:mt-[120px] mt-[80px]">
       <div className="flex lg:flex-row flex-col-reverse justify-between w-full min-h-[600px] lg:p-[60px] p-[30px] rounded-[16px] bg-work-gradient">
         {/* info part */}
         <div className="flex lg:flex-col flex-row justify-around lg:w-1/4 w-full lg:mt-0 mt-[20px] lg:pt-0 pt-[20px] lg:border-r lg:border-r-white lg:border-t-0 border-t border-t-white">

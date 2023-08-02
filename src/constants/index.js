@@ -1,6 +1,7 @@
 import { triptrip, oe, hobos } from '../assets/images';
 // import { corrine, guangxin, lizzie, zora } from '../assets/images';
-import { service1, service2, service3, service4 } from '../assets/images';
+// import { service1, service2, service3, service4 } from '../assets/images';
+import { test } from '../assets/images'
 
 // const baseAssetUrl = 'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/';
 const baseAssetUrl = '/src/assets/images/';
@@ -62,51 +63,53 @@ const works = [
   }
 ];
 
-const services = {
-  header: "Customize your business",
-  services: [
-    {
-      // image: "/react.svg",
-      // image: `${baseAssetUrl}/Services/1.gif`,
-      image: service1,
-      title: "Digital Consulting",
-      content: [
-        "• Find a 100% matched  digital solution for your needs.",
-        "• Digital transformation for traditional enterprises",
-        "• Digital Marketing"]
-    },
-    {
-      // image: `${baseAssetUrl}/Services/2.gif`,
-      image: service2,
-      title: "Product design",
-      content: [
-        "• User research",
-        "• UI design",
-        "• User flow design",
-        "• Competitor analysis"
-      ]
-    },
-    {
-      // image: `${baseAssetUrl}/Services/3.gif`,
-      image: service3,
-      title: "Custom developement",
-      content: [
-        "• mobile friendly",
-        "• cross-platform",
-        "• scalable"
-      ]
-    },
-    {
-      // image: `${baseAssetUrl}/Services/4.gif`,
-      image: service4,
-      title: "Wechat Mini-Program",
-      content: [
-        "• The express way to bring your business into China market",
-        "• WeChat Official Account integration",
-      ]
-    }
-  ]
-};
+const services = [
+  {
+    // image: "/react.svg",
+    // image: `${baseAssetUrl}/Services/1.gif`,
+    // image: service1,
+    image: test,
+    title: "Digital Consulting",
+    content: [
+      "Find a 100% matched  digital solution for your needs.",
+      "Digital transformation for traditional enterprises",
+      "Digital Marketing"
+    ]
+  },
+  {
+    // image: `${baseAssetUrl}/Services/2.gif`,
+    // image: service2,
+    image: test,
+    title: "Product design",
+    content: [
+      "User research",
+      "UI design",
+      "User flow design",
+      "Competitor analysis"
+    ]
+  },
+  {
+    // image: `${baseAssetUrl}/Services/3.gif`,
+    // image: service3,
+    image: test,
+    title: "Custom developement",
+    content: [
+      "mobile friendly",
+      "cross-platform",
+      "scalable"
+    ]
+  },
+  {
+    // image: `${baseAssetUrl}/Services/4.gif`,
+    // image: service4,
+    image: test,
+    title: "Wechat Mini-Program",
+    content: [
+      "The express way to bring your business into China market",
+      "WeChat Official Account integration",
+    ]
+  }
+];
 
 const about = {
   avatar: [{

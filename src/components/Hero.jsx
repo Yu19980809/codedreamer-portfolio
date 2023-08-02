@@ -1,23 +1,25 @@
 import { motion } from 'framer-motion';
 import { PlanetCanvas } from './canvas';
 import { slideIn } from '../utils/motion';
-import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <div id="Home" className={`relative w-full mt-0 ${ styles.paddingX } h-screen flex flex-col items-center justify-center`} >
+    <div id="Home" className="relative w-full h-screen flex justify-center items-center" >
       {/* main content */}
-      <div className="flex lg:flex-row flex-col-reverse justify-center items-center w-full h-screen">
+      <div className="flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center h-screen">
         {/* text */}
         <motion.div
           variants={ slideIn( 'left', 'spring', 0.2, 1 ) }
           initial="hidden"
           animate="show"
-          className="flex justify-center items-center lg-[60%] w-full"
+          className="flex justify-center items-center lg:w-[60%] w-full"
         >
           <div>
-            <h1 className="xl:text-[72px] lg:text-[52px] sm:text-[36px] text-[24px] font-bold" style={{textShadow: "4px 4px 4px rgba(236, 238, 239, .7)"}}>
-              Code <span className="text-primary" style={{textShadow: "4px 4px 4px rgba(228, 206, 27, .7)"}}>the future</span><br/> you dream of
+            <h1 className="xl:text-[72px] lg:text-[52px] sm:text-[36px] text-[24px] font-bold">
+              CODE&nbsp;
+              <br className="sm:hidden" />
+              <span className="text-primary">THE FUTURE</span><br/>
+              YOU DREAM OF
             </h1>
 
             <div className="mt-[50px] lg:text-left text-center">
@@ -38,8 +40,8 @@ const Hero = () => {
       </div>
 
       {/* scroll up tips */}
-      <div className="absolute sm:bottom-10 bottom-0 w-full flex flex-col justify-center items-center gap-[20px]">
-        <a href="#Works">
+      <div className="absolute bottom-10 w-full sm:flex hidden flex-col justify-center items-center gap-[20px]">
+        <a href="#Services">
           <div className="w-[35px] h-[64px] flex justify-center items-start p-2 rounded-3xl border-4 border-dimWhite">
             <motion.div
               animate={ { y: [ 0, 24, 0 ] } }
