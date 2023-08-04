@@ -53,7 +53,8 @@ const works = [
     //   `${baseAssetUrl}/Works/OE1.jpg`,
     //   `${baseAssetUrl}/Works/OE2.jpg`
     // ],
-    image: oe,
+    // image: oe,
+    image: "http://localhost:3000/images/Works/oe.png",
     description: 'A dashboard to show all business data, these data from individual modules can be viewed and analyzed, giving users a clearer picture of the business',
     icon: 'icon-wangye',
     tags: [
