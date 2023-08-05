@@ -1,10 +1,14 @@
-import { triptrip, oe, hobos } from '../assets/images';
-// import { corrine, guangxin, lizzie, zora } from '../assets/images';
+
+console.log(typeof(import.meta.env.VITE_IMAGE_LOCAL))
+
+// // local images:
+// import { triptrip, oe, hobos } from '../assets/images';
 // import { service1, service2, service3, service4 } from '../assets/images';
-import { test } from '../assets/images'
+// import { test } from '../assets/images';
 
 // const baseAssetUrl = 'https://codedreamer-portfolio.oss-cn-shanghai.aliyuncs.com/';
-const baseAssetUrl = '/src/assets/images/';
+const baseAssetUrl = 'http://codedreamer.tech/images/images/';
+
 
 const navbarLinks = [
   { name: 'Home' },
@@ -22,8 +26,8 @@ const works = [
   {
     name: 'Hobos',
     qrcode_img: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
-    // image: `${baseAssetUrl}/Works/Hobos-QR.jpeg`,
-    image: hobos,
+    image: `${baseAssetUrl}/Works/hobos.png`,
+    // image: hobos,
     description: 'A community of underground stand-up comedy lovers in china. You can view and book comedy show and follow clubs and comedians you like.',
     icon: 'icon-xiaochengxu1',
     tags: [
@@ -34,13 +38,8 @@ const works = [
   {
     name: 'Triptrip',
     qrcode_img: `${baseAssetUrl}images/triptrip-QR.jpeg`,
-    // image: [
-    //   `${baseAssetUrl}/Works/triptrip1.jpg`,
-    //   `${baseAssetUrl}/Works/triptrip2.jpg`,
-    //   `${baseAssetUrl}/Works/triptrip3.jpg`,
-    //   `${baseAssetUrl}/Works/triptrip4.jpg`
-    // ],
-    image: triptrip,
+    image: `${baseAssetUrl}/Works/triptrip.png`,
+    // image: triptrip,
     description: 'A Wechat mini-program designed to help local trip organizers post events, manage groups, gather and visualize key information.',
     icon: 'icon-kaifarenwu',
     tags: [
@@ -49,12 +48,8 @@ const works = [
   },
   {
     name: 'OE Biotech',
-    // image: [
-    //   `${baseAssetUrl}/Works/OE1.jpg`,
-    //   `${baseAssetUrl}/Works/OE2.jpg`
-    // ],
     // image: oe,
-    image: "http://codedreamer.tech/images/images/Works/oe.png",
+    image: `${baseAssetUrl}Works/oe.png`,
     description: 'A dashboard to show all business data, these data from individual modules can be viewed and analyzed, giving users a clearer picture of the business',
     icon: 'icon-wangye',
     tags: [
@@ -66,10 +61,9 @@ const works = [
 
 const services = [
   {
-    // image: "/react.svg",
-    // image: `${baseAssetUrl}/Services/1.gif`,
+    image: `${baseAssetUrl}/Services/1.gif`,
     // image: service1,
-    image: test,
+    // image: test,
     title: "Digital Consulting",
     content: [
       "Find a 100% matched  digital solution for your needs.",
@@ -78,9 +72,9 @@ const services = [
     ]
   },
   {
-    // image: `${baseAssetUrl}/Services/2.gif`,
+    image: `${baseAssetUrl}/Services/2.gif`,
     // image: service2,
-    image: test,
+    // image: test,
     title: "Product design",
     content: [
       "User research",
@@ -90,9 +84,9 @@ const services = [
     ]
   },
   {
-    // image: `${baseAssetUrl}/Services/3.gif`,
+    image: `${baseAssetUrl}/Services/3.gif`,
     // image: service3,
-    image: test,
+    // image: test,
     title: "Custom developement",
     content: [
       "mobile friendly",
@@ -101,9 +95,9 @@ const services = [
     ]
   },
   {
-    // image: `${baseAssetUrl}/Services/4.gif`,
+    image: `${baseAssetUrl}/Services/4.gif`,
     // image: service4,
-    image: test,
+    // image: test,
     title: "Wechat Mini-Program",
     content: [
       "The express way to bring your business into China market",
